@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  nodemaster:
+    build: .
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "5000:5000"
+      - "5001:5001"
+    volumes:
+      - G:/prjs/node/node-master:/srv/app
